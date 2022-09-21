@@ -9,6 +9,8 @@ Perform a development install of mrx_link.
 
         python3 binder/postBuild
 """
+import os
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -46,6 +48,15 @@ _(sys.executable, "-m", "jupyter", "server", "extension", "list")
 
 # Initially list installed extensions to determine if there are any surprises.
 _(sys.executable, "-m", "jupyter", "labextension", "list")
+
+# Copy Jupyter notebook configuration.
+if not os.path.exists(os.path.join(os.environ["HOME"], ".jupyter")):
+    os.makedirs(os.path.join(os.environ["HOME"], ".jupyter"))
+
+shutil.copyfile(
+    os.path.join("binder", "jupyter_notebook_config.py"),
+    os.path.join(os.environ["HOME"], ".jupyter", "jupyter_notebook_config.py"),
+)
 
 print("JupyterLab with mrx_link is ready to run with:\n")
 print("\tpython3 -m jupyterlab\n")
