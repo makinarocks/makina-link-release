@@ -26,6 +26,7 @@ dependencies:
       - optuna>=2.9
       - pandas>=1.1
       - pexpect>=4.7
+      - protobuf<=3.20.1
       - pycryptodome>=3.14
       - pydantic>=1.8.0
       - pywinpty<2.0; python_version=='3.6' and sys_platform=='win32'
