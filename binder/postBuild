@@ -35,7 +35,7 @@ def _(*args: Any, **kwargs: Any) -> Any:
 _(sys.executable, "-m", "pip", "check")
 
 # Install the labextension.
-_(sys.executable, "-m", "pip", "install", "--upgrade", "mrx_link==0.9.0.dev3")
+_(sys.executable, "-m", "pip", "install", "--upgrade", "mrx_link==0.9.1")
 
 # Uninstall the labextension.
 _(sys.executable, "-m", "pip", "uninstall", "--yes", "jupyter-offlinenotebook")
