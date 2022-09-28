@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - python=3.9
-  - nodejs=16
   - pip>=21
   - pip:
       - catboost>=1.0
