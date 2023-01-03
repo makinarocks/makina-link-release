@@ -7,7 +7,7 @@ dependencies:
   - pip:
       - catboost>=1.0
       - livelossplot>=0.5
-      - mrx_link==0.10.2
+      - mrx_link==0.10.3
       - pytorch-lightning>=1.6
       - scikit-learn>=1.0
       - seaborn>=0.11
