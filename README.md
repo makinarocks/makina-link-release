@@ -24,7 +24,7 @@ Step 1. Request a Product Key [here](https://link.makinarocks.ai/start.html).
 Step 2. Install Link with the following command.
 
 ```bash
-python3 -m pip install "mrx-link==0.10.2"
+python3 -m pip install "mrx-link==0.10.3"
 ```
 
 Step 3. After installation, run JupyterLab.
